@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #05080d, #0b1220);
+    color: #e8e8e8;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    line-height: 1.75;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 80px 24px;
+}
+
+/* HERO */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 2px solid rgba(56,189,248,0.4);
+    box-shadow: 0 12px 40px rgba(56,189,248,0.25);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #7dd3fc;
+}
+
+.meta {
+    margin-top: 10px;
+    color: #9ca3af;
+}
+
+.links {
+    margin-top: 26px;
+}
+
+.links a {
+    margin-right: 18px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 90px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 14px;
+}
+
+/* CARDS */
+.card, .rec {
+    background: rgba(255,255,255,0.03);
+    padding: 28px 30px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.card:hover, .rec:hover {
+    box-shadow: 0 16px 40px rgba(56,189,248,0.12);
+}
+
+/* EXPERIENCE */
+.exp-card {
+    display: flex;
+    gap: 24px;
+    background: rgba(255,255,255,0.03);
+    padding: 26px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.exp-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    background: #fff;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    padding: 8px 16px;
+    background: rgba(56,189,248,0.15);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #bae6fd;
+}
+
+/* BADGES */
+.badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    background: rgba(56,189,248,0.18);
+    border-radius: 14px;
+    font-size: 0.8rem;
+    color: #7dd3fc;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .profile-pic {
+        margin: auto;
+    }
+}
