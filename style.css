@@ -5,12 +5,20 @@
     padding: 0;
 }
 
-/* BODY */
+/* BODY & HTML FIX */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(180deg, #05080d, #0b1220);
     color: #e8e8e8;
     line-height: 1.75;
+    background: linear-gradient(to bottom, #05080d, #0b1220);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* CONTAINER */
