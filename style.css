@@ -1453,3 +1453,91 @@ transform:translateY(0);
 animation:fadeUp .8s ease;
 
 }
+
+/* ===========================================
+Reveal Animation
+=========================================== */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:.8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ===========================================
+Active Nav
+=========================================== */
+
+.nav-links a.active{
+
+color:white;
+
+font-weight:600;
+
+}
+
+/* ===========================================
+Back To Top
+=========================================== */
+
+.top-btn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:22px;
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+color:white;
+
+box-shadow:var(--shadow);
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+.top-btn.visible{
+
+opacity:1;
+
+pointer-events:auto;
+
+}
+
+.top-btn:hover{
+
+transform:translateY(-5px);
+
+}
